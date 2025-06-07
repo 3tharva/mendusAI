@@ -1,7 +1,7 @@
 import type {Config} from 'tailwindcss';
 
 export default {
-  darkMode: ['class'],
+  darkMode: ['class'], // class or 'media' or boolean
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,16 +10,16 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "1rem", // Default padding for containers
+      padding: "1rem", 
       screens: {
         '2xl': '1400px',
       },
     },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Space Grotesk', 'sans-serif'],
-        code: ['monospace'],
+        body: ['Inter', 'sans-serif'], // Primary readable font
+        headline: ['Space Grotesk', 'sans-serif'], // For headings and prominent text
+        sans: ['Inter', 'sans-serif'], // Default sans-serif
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -77,7 +77,7 @@ export default {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
-        xl: 'calc(var(--radius) + 4px)', // For more rounded elements if needed
+        xl: 'calc(var(--radius) + 4px)',
         '2xl': 'calc(var(--radius) + 8px)',
         '3xl': 'calc(var(--radius) + 16px)',
         full: '9999px',
@@ -99,7 +99,7 @@ export default {
             height: '0',
           },
         },
-        float: { // Kept if needed, not prominent in new design
+        float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
         }
