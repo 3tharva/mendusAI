@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
@@ -12,13 +13,13 @@ export default function CallToActionMendus() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full text-base px-8 py-6 flex-grow sm:flex-grow-0 justify-between w-full sm:w-auto">
-              <Link href="#explore-details"> {/* Placeholder link */}
+              <Link href="/explore-details">
                 Explore
                 <ChevronRight className="h-5 w-5" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 hover:text-primary rounded-full text-base px-8 py-6 flex-grow sm:flex-grow-0 justify-between w-full sm:w-auto">
-              <Link href="#join-us-form"> {/* Placeholder link */}
+              <Link href="/join-us">
                 Join Us
                 <ChevronRight className="h-5 w-5" />
               </Link>

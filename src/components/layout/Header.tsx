@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 
 export default function Header() {
@@ -11,25 +12,25 @@ export default function Header() {
         </Link>
         <nav className="flex items-center gap-3 text-sm sm:gap-5">
           <Link
-            href="#home" // Assuming #home or / for home
+            href="/"
             className="transition-colors hover:text-foreground/80 text-muted-foreground text-xs"
           >
             Home
           </Link>
           <Link
-            href="#about" // Placeholder
+            href="/about"
             className="transition-colors hover:text-foreground/80 text-muted-foreground text-xs"
           >
             About
           </Link>
           <Link
-            href="#discover" // Placeholder
+            href="/discover"
             className="transition-colors hover:text-foreground/80 text-muted-foreground text-xs"
           >
             Discover
           </Link>
           <Link
-            href="#join" // Placeholder
+            href="/join"
             className="transition-colors hover:text-foreground/80 text-muted-foreground text-xs"
           >
             Join
