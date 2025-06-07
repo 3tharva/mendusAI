@@ -32,7 +32,7 @@ export default function IndustryDetailPageContent({ industry }: IndustryDetailPa
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-primary mb-4">
             AI in {title}
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="font-body text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             {longDescription}
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function IndustryDetailPageContent({ industry }: IndustryDetailPa
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground text-sm mb-4">{useCase.description}</p>
+                  <p className="font-body text-muted-foreground text-sm mb-4">{useCase.description}</p>
                   <Image 
                     src={`https://placehold.co/600x400.png`} 
                     alt={useCase.title} 
@@ -89,7 +89,7 @@ export default function IndustryDetailPageContent({ industry }: IndustryDetailPa
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
             Ready to Transform Your {title} Operations?
           </h2>
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
+          <p className="font-body text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             Let Mendus be your partner in leveraging AI for groundbreaking results in the {title.toLowerCase()} sector.
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full text-lg px-8 py-6">

@@ -5,7 +5,7 @@ import IndustriesSection from '@/components/sections/IndustriesSection';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, BrainCircuit, Zap, Briefcase } from 'lucide-react'; // Added BrainCircuit, Zap, Briefcase
 import Image from 'next/image';
 import { industries } from '@/lib/industry-data';
 
@@ -24,7 +24,7 @@ export default function IndustriesPage() {
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-primary mb-6">
               AI for Every Industry
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
+            <p className="font-body text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               Discover how Mendus leverages artificial intelligence to drive innovation, efficiency, and growth across diverse sectors. We tailor solutions to meet your unique challenges.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full text-lg px-8 py-6">
