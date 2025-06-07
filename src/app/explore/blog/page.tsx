@@ -8,38 +8,38 @@ import { Feather, ArrowRight, Rss } from 'lucide-react';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Mendus Blog: Chronicles of the Cognitive Frontier',
-  description: 'Explore dispatches from the edge of AI research, ethical considerations in agentic evolution, and visionary insights from the Mendus Collective.',
+  title: 'Mendus Blog: Insights from the AI Frontier',
+  description: 'Explore articles on AI research, ethical considerations in AI development, and visionary insights from the Mendus Team.',
 };
 
 export default function ExploreBlogPage() {
   const blogPosts = [
     {
-      title: "Paradigm Shift: The Implications of Self-Modifying Agentic Code",
-      date: "Stardate 77801.4",
+      title: "The Future of Self-Improving AI: Possibilities and Challenges",
+      date: "October 26, 2023", // Using a more standard date format
       author: "Dr. Aris Thorne",
-      excerpt: "An exploration into the profound ethical and technical ramifications when AI agents gain the capability to autonomously rewrite their own foundational algorithms...",
+      excerpt: "An exploration of the profound ethical and technical questions that arise when AI agents can autonomously rewrite their own core programming...",
       imageSrc: "https://placehold.co/600x350.png",
-      imageHint: "abstract code evolution",
-      slug: "/explore/blog/self-modifying-code",
+      imageHint: "ai code evolution abstract",
+      slug: "/explore/blog/self-improving-ai",
     },
     {
-      title: "Federated Sentience: Building a Global Mind Without Sacrificing Privacy",
-      date: "Stardate 77750.2",
+      title: "Building a Global AI Mind While Protecting Privacy",
+      date: "September 15, 2023",
       author: "Lyra Nova",
-      excerpt: "Technical deep-dive into the cryptographic protocols and decentralized network topologies enabling collective intelligence among distributed AI agents while preserving data sovereignty.",
+      excerpt: "A technical look into the secure methods and decentralized networks that allow AI agents to learn collectively while keeping data private.",
       imageSrc: "https://placehold.co/600x350.png",
-      imageHint: "global network brain",
-      slug: "/explore/blog/federated-sentience",
+      imageHint: "global network brain secure",
+      slug: "/explore/blog/secure-federated-learning",
     },
     {
-      title: "Beyond Turing: New Metrics for Assessing True Artificial General Intelligence",
-      date: "Stardate 77695.8",
+      title: "Beyond Old Tests: New Ways to Measure True AI Intelligence",
+      date: "August 02, 2023",
       author: "The Mendus Collective",
-      excerpt: "A collaborative paper proposing novel frameworks and benchmarks for evaluating progress towards AGI, moving beyond simplistic imitation games to assess genuine cognitive capabilities.",
+      excerpt: "A collaborative paper proposing new methods and benchmarks for evaluating progress towards AGI, moving beyond simple tests to assess genuine thinking abilities.",
       imageSrc: "https://placehold.co/600x350.png",
-      imageHint: "abstract intelligence test",
-      slug: "/explore/blog/beyond-turing",
+      imageHint: "ai intelligence test brain",
+      slug: "/explore/blog/measuring-agi",
     },
   ];
 
@@ -51,14 +51,14 @@ export default function ExploreBlogPage() {
           <div className="container mx-auto px-4 md:px-6">
             <Feather className="h-16 w-16 mx-auto mb-6 text-primary animate-pulse" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              Chronicles of the Cognitive Frontier
+              Insights from the AI Frontier
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Dispatches from the Mendus Collective: Explorations into AI breakthroughs, ethical navigation in the age of agentic intelligence, and visionary perspectives on the co-evolution of humanity and technology.
+              From the Mendus Team: Explorations into AI breakthroughs, ethical considerations in intelligent AI, and visionary perspectives on how humans and technology can evolve together.
             </p>
              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-md">
                 <Link href="#latest-dispatches">
-                    Explore Latest Insights <Rss className="ml-2 h-5 w-5" />
+                    Explore Latest Articles <Rss className="ml-2 h-5 w-5" />
                 </Link>
             </Button>
           </div>
@@ -66,7 +66,7 @@ export default function ExploreBlogPage() {
 
         <section id="latest-dispatches" className="py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Recent Transmissions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Recent Articles</h2>
             <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
                 <Link href={post.slug} key={index} className="block group">
@@ -85,7 +85,7 @@ export default function ExploreBlogPage() {
                       <p className="text-sm text-muted-foreground font-body flex-grow">{post.excerpt}</p>
                       <div className="mt-4">
                         <span className="inline-flex items-center text-sm text-primary font-medium group-hover:underline">
-                          Read Full Chronicle <ArrowRight className="ml-1 h-4 w-4" />
+                          Read Full Article <ArrowRight className="ml-1 h-4 w-4" />
                         </span>
                       </div>
                     </div>
@@ -95,7 +95,7 @@ export default function ExploreBlogPage() {
             </div>
             <div className="text-center mt-16">
               <Button variant="outline" size="lg" className="text-lg">
-                Load More Dispatches
+                Load More Articles
               </Button>
             </div>
           </div>

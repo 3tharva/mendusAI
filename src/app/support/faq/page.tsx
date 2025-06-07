@@ -11,35 +11,35 @@ import {
 import { HelpCircle, Brain, Shield, Code, InfinityIcon } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Mendus Cognitive Enquiries (FAQ)',
-  description: 'Explore frequently posited questions regarding Mendus technology, ethical frameworks, agentic capabilities, and the future of AI.',
+  title: 'Mendus Frequently Asked Questions (FAQ)',
+  description: 'Find answers to common questions about Mendus technology, ethical AI, agent capabilities, and the future of artificial intelligence.',
 };
 
 export default function SupportFaqPage() {
   const faqs = [
     {
-      question: "How does Mendus ensure ethical alignment in autonomous AI decision-making?",
-      answer: "Mendus employs a multi-layered Ethical Governance Layer (EGL) embedded within the Eon Platform. This includes: 1) Axiomatic Safety Protocols: Core, immutable principles guiding agent behavior. 2) Real-time Sentience Monitoring: Continuous analysis of agent decision pathways against established ethical matrices. 3) Human-in-the-loop Escalation: Critical decisions with high uncertainty or ethical ambiguity are flagged for human oversight via our Nexus Sentinel interface. 4) Verifiable Audit Trails: All agent decisions and their underlying rationales are recorded on a decentralized, immutable ledger for transparency and accountability.",
+      question: "How does Mendus ensure its AI makes ethical decisions?",
+      answer: "Mendus uses a multi-layered Ethical Governance Layer (EGL) within its Eon Platform. This includes: 1) Core Safety Rules: Fundamental principles guiding AI behavior. 2) Real-time Ethical Monitoring: AI decision processes are continuously checked against ethical standards. 3) Human Oversight: Critical or ethically ambiguous decisions are flagged for human review. 4) Transparent Audit Trails: All AI decisions and their reasoning are recorded securely for accountability.",
       icon: Shield,
     },
     {
-      question: "What are the theoretical limits of agentic learning within the Mendus Eon ecosystem?",
-      answer: "The Eon Platform is architected for continuous, unbounded learning. Theoretical limits are primarily constrained by available computational resources and the complexity of the data environment. Our research into Quantum-Inspired Compute Cores and Decentralized Federated Sentience aims to push these boundaries exponentially. While true AGI (Artificial General Intelligence) remains a research frontier, Mendus agents are designed to approach increasingly sophisticated levels of specialized and generalized intelligence through emergent meta-learning.",
+      question: "What are the learning limits for AI in the Mendus Eon ecosystem?",
+      answer: "The Eon Platform is designed for continuous, open-ended learning. Current limits are mainly related to computing power and data complexity. Our research in advanced computing and shared AI learning aims to push these limits further. While true Artificial General Intelligence (AGI) is still a research goal, Mendus agents are built to achieve increasingly advanced levels of specialized and general intelligence through ongoing learning.",
       icon: Brain,
     },
     {
-      question: "How does Mendus address the 'black box' problem in complex AI models?",
-      answer: "We utilize a Neuro-Symbolic AI framework. This hybrid approach combines deep learning's pattern recognition with symbolic AI's logical reasoning. This allows for greater explainability (XAI) as the symbolic layer can often provide a causal trace for decisions made by the neural network. Furthermore, our Ethical Governance Layer includes tools for introspective analysis by the agents themselves, allowing them to articulate (to a degree) their decision-making processes.",
+      question: "How does Mendus address the 'black box' problem in complex AI?",
+      answer: "We use a Neuro-Symbolic AI framework. This hybrid approach combines deep learning (good at finding patterns) with symbolic AI (good at logical reasoning). This makes AI decisions more explainable, as the logical part can often clarify why a decision was made. Our Ethical Governance Layer also includes tools for AI agents to analyze and explain their own decision-making processes.",
       icon: Code,
     },
     {
-      question: "What distinguishes Mendus Digital Sentinels from conventional AI assistants or RPA bots?",
-      answer: "Mendus Sentinels are not pre-programmed automatons; they are autonomous cognitive entities. Key differentiators include: 1) Proactive Autonomy: Sentinels anticipate needs and act without explicit instruction, beyond simple task automation. 2) Complex Reasoning: They can handle ambiguous situations, strategize, and solve novel problems. 3) Continuous Meta-Learning: Sentinels learn from every interaction and observation across the federated network, constantly improving their capabilities. 4) Emergent Collaboration: Sentinels can form ad-hoc swarms to tackle large-scale problems dynamically.",
+      question: "What makes Mendus Digital Sentinels different from regular AI assistants or bots?",
+      answer: "Mendus Sentinels are more than just pre-programmed tools; they are autonomous thinking agents. Key differences include: 1) Proactive Independence: Sentinels anticipate needs and act without explicit instructions. 2) Complex Reasoning: They can handle unclear situations, strategize, and solve new problems. 3) Continuous Shared Learning: Sentinels learn from every interaction across their network, constantly improving. 4) Dynamic Teamwork: Sentinels can form temporary teams to tackle large-scale problems together.",
       icon: InfinityIcon,
     },
     {
-      question: "What measures are in place to prevent misuse of Mendus's advanced AI technologies?",
-      answer: "Preventing misuse is paramount. Our strategy includes: 1) Rigorous Client Vetting: We partner with organizations committed to ethical AI deployment. 2) Embedded Ethical Safeguards: As mentioned, the EGL is designed to prevent harmful actions. 3) Use-Case Restrictions: Certain high-risk applications are explicitly proscribed. 4) Continuous Monitoring & Auditing: We maintain oversight capabilities and conduct regular audits. 5) Collaboration with Regulatory Bodies: We actively engage with policymakers to help shape responsible AI governance frameworks globally.",
+      question: "What measures prevent misuse of Mendus's advanced AI?",
+      answer: "Preventing misuse is a top priority. Our strategy includes: 1) Careful Partner Selection: We work with organizations committed to ethical AI use. 2) Built-in Ethical Safeguards: The EGL is designed to prevent harmful actions. 3) Use-Case Restrictions: Certain high-risk applications are not permitted. 4) Continuous Monitoring: We maintain oversight and conduct regular audits. 5) Collaboration with Regulators: We actively work with policymakers to help create responsible AI governance standards globally.",
       icon: Shield,
     }
   ];
@@ -52,10 +52,10 @@ export default function SupportFaqPage() {
           <div className="container mx-auto px-4 md:px-6">
             <HelpCircle className="h-16 w-16 mx-auto mb-6 text-primary" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              Cognitive Enquiries & Clarifications
+              Frequently Asked Questions
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Navigating the frontiers of advanced intelligence often sparks profound questions. Explore our compendium of frequently posited enquiries regarding Mendus technologies and their implications.
+              Exploring advanced AI can bring up many questions. Here are answers to some common inquiries about Mendus technologies and their implications.
             </p>
           </div>
         </section>
@@ -78,7 +78,7 @@ export default function SupportFaqPage() {
               ))}
             </Accordion>
             <p className="mt-12 text-center text-muted-foreground font-body">
-              For enquiries beyond this scope, please <a href="/support/contact" className="text-primary hover:underline">interface with our Nexus Team</a>.
+              For questions not covered here, please <a href="/support/contact" className="text-primary hover:underline">contact our team</a>.
             </p>
           </div>
         </section>

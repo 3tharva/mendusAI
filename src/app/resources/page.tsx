@@ -9,59 +9,59 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/com
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Mendus Knowledge Singularity Hub',
-  description: 'Access paradigm-shifting whitepapers, deep-dive case studies, and frontier-tech webinars from Mendus. Explore the future of agentic intelligence and cognitive automation.',
+  title: 'Mendus Knowledge Hub',
+  description: 'Access insightful whitepapers, detailed case studies, and tech webinars from Mendus. Explore the future of AI and intelligent automation.',
 };
 
 export default function ResourcesPage() {
   const resources = [
     { 
-      title: 'Whitepaper: Axiomatic Design of Self-Evolving AI Cognition', 
+      title: 'Whitepaper: Designing AI That Learns and Evolves', 
       type: 'Advanced Theoretical Whitepaper', 
       icon: Brain, 
       link: '#', 
-      description: 'A foundational treatise on the mathematical and philosophical underpinnings of creating AI systems capable of autonomous cognitive restructuring and exponential learning.',
-      imageHint: 'abstract brain network' 
+      description: 'A foundational guide on the principles of creating AI systems capable of independent cognitive growth and exponential learning.',
+      imageHint: 'ai brain learning abstract' 
     },
     { 
-      title: 'Case Study: Global Climate Symbiosis via Agentic Terraforming', 
-      type: 'Planetary-Scale Impact Analysis', 
+      title: 'Case Study: AI for Global Climate Solutions', 
+      type: 'Planetary Impact Analysis', 
       icon: Database, 
       link: '#', 
-      description: 'An in-depth analysis of a simulated deployment of Mendus agents orchestrating atmospheric carbon capture and ecosystem regeneration on a global scale.',
-      imageHint: 'earth data climate'
+      description: 'An in-depth look at a simulated deployment of Mendus agents managing atmospheric carbon capture and ecosystem regeneration worldwide.',
+      imageHint: 'earth climate data green'
     },
     { 
-      title: 'Webinar: The Sentience Spectrum - Navigating Emergent AI Consciousness', 
+      title: 'Webinar: Understanding AI Consciousness', 
       type: 'Ethical & Technical Deep Dive', 
       icon: Mic, 
       link: '#', 
-      description: 'Join Mendus ethicists and lead architects discussing the implications and technical milestones towards AI systems exhibiting recognizable markers of sentience.',
-      imageHint: 'futuristic webinar presentation'
+      description: 'Join Mendus ethicists and architects discussing the implications and milestones towards AI systems that show signs of awareness.',
+      imageHint: 'webinar presentation future'
     },
      { 
-      title: 'Technical Blueprint: Decentralized Federated Sentience Networks', 
+      title: 'Technical Blueprint: Secure Decentralized AI Networks', 
       type: 'Architectural Overview', 
       icon: GitBranch, 
       link: '#', 
-      description: 'Explore the cryptographic and network topology innovations enabling secure, privacy-preserving collective intelligence across distributed AI agents.',
-      imageHint: 'network nodes connection'
+      description: 'Explore innovations enabling secure, privacy-focused collective intelligence across distributed AI agents.',
+      imageHint: 'secure network nodes'
     },
     { 
-      title: 'Research Paper: Quantum Entanglement in AI Communication Protocols', 
+      title: 'Research Paper: Quantum-Inspired AI Communication', 
       type: 'Peer-Reviewed Publication Preview', 
       icon: FileText, 
       link: '#', 
-      description: 'A summary of our latest research into leveraging quantum phenomena for instantaneous, unjammable communication between AI agents across vast distances.',
-      imageHint: 'quantum physics abstract'
+      description: 'A summary of our latest research into using quantum principles for instant, secure communication between AI agents over vast distances.',
+      imageHint: 'quantum communication abstract'
     },
     { 
-      title: 'Interactive Demo: Real-time Agentic Swarm Problem Solving', 
+      title: 'Interactive Demo: AI Swarm Problem Solving', 
       type: 'Live Simulation Access', 
       icon: BookOpen, 
       link: '#', 
-      description: 'Experience firsthand how a swarm of Mendus digital workers collaboratively solve complex logistical challenges, adapting in real-time to dynamic variables.',
-      imageHint: 'swarm intelligence simulation'
+      description: 'Experience how a team of Mendus digital workers collaboratively solve complex logistical challenges, adapting in real-time.',
+      imageHint: 'ai swarm simulation'
     },
   ];
 
@@ -73,10 +73,10 @@ export default function ResourcesPage() {
           <div className="container mx-auto px-4 md:px-6 text-center">
             <BookOpen className="h-16 w-16 mx-auto mb-6 text-primary animate-pulse" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              Mendus Knowledge Singularity Hub
+              Mendus Knowledge Hub
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Traverse the frontiers of cognitive automation. The Mendus Knowledge Hub is your portal to seminal research, groundbreaking case studies, and visionary explorations into the future of intelligence.
+              Explore the frontiers of intelligent automation. The Mendus Knowledge Hub is your portal to key research, impactful case studies, and visionary insights into the future of intelligence.
             </p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function ResourcesPage() {
                   <div className="p-6 pt-0">
                     <Button asChild variant="outline" className="w-full hover:bg-primary/10">
                       <Link href={resource.link}>
-                        Access Transmission <ArrowRight className="ml-2 h-4 w-4" />
+                        Access Resource <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </div>
@@ -119,9 +119,9 @@ export default function ResourcesPage() {
               ))}
             </div>
              <div className="mt-16 text-center">
-                <p className="text-lg text-muted-foreground font-body mb-6">Seeking bespoke intelligence or collaborative research opportunities?</p>
+                <p className="text-lg text-muted-foreground font-body mb-6">Looking for specific information or collaborative research opportunities?</p>
                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-md">
-                    <Link href="/support/contact">Initiate Contact with Our Nexus Team</Link>
+                    <Link href="/support/contact">Contact Our Team</Link>
                 </Button>
             </div>
           </div>

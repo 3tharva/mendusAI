@@ -4,56 +4,54 @@ import Footer from '@/components/layout/Footer';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Library, FileText, Brain, GitFork, Download } from 'lucide-react';
+import { Library, FileText, Brain, GitFork, Download, ShieldCheck } from 'lucide-react'; // Added ShieldCheck
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+// import Image from 'next/image'; // Image component commented out as per existing file
 
 export const metadata: Metadata = {
-  title: 'The Mendus Archives: Repository of Foundational AI Principles',
-  description: 'Access seminal whitepapers, technical schematics, ethical frameworks, and foundational research from the Mendus Archives. Delve into the core knowledge shaping agentic intelligence.',
+  title: 'The Mendus Archives: Foundational AI Knowledge',
+  description: 'Access key whitepapers, technical documents, ethical guidelines, and foundational research from Mendus. Delve into the core knowledge shaping intelligent AI.',
 };
 
 export default function ExploreLibraryPage() {
   const libraryItems = [
     {
       id: 'wp-001',
-      title: 'Axioms of Agentic Consciousness: A Mathematical Framework',
+      title: 'Axioms of AI Consciousness: A Framework',
       type: 'Whitepaper',
       category: 'Theoretical AI',
       icon: Brain,
-      description: 'A rigorous mathematical treatment of the necessary and sufficient conditions for emergent consciousness in artificial agents. Explores information integration theory and quantum cognitive models.',
-      dataAiHint: 'consciousness mathematics brain',
+      description: 'A clear mathematical framework for understanding the conditions for emergent consciousness in AI. Explores information integration and cognitive models.',
+      dataAiHint: 'ai consciousness brain math',
     },
     {
       id: 'ts-002',
-      title: 'Eon Platform: Hyper-Dimensional Orchestration Core Schematics',
+      title: 'Eon Platform: Core Orchestration Schematics',
       type: 'Technical Schematic',
       category: 'Platform Architecture',
       icon: GitFork,
-      description: 'Detailed architectural blueprints of the Mendus Eon Platform, including its quantum-inspired compute layer, neuro-symbolic agent framework, and decentralized data fabric.',
-      dataAiHint: 'platform architecture network',
+      description: 'Detailed architectural blueprints of the Mendus Eon Platform, including its compute layer, AI agent framework, and decentralized data system.',
+      dataAiHint: 'platform architecture diagram',
     },
     {
       id: 'ef-003',
-      title: 'The Asimov-Rossum Ethical Compass: Guiding Principles for AGI',
+      title: 'The Asimov-Rossum Ethical Guide for AGI',
       type: 'Ethical Framework',
       category: 'AI Ethics & Governance',
-      icon: ShieldCheck, // You'll need to import ShieldCheck from lucide-react
-      description: 'A comprehensive ethical codex for the development and deployment of Artificial General Intelligence, addressing value alignment, existential risk mitigation, and societal impact.',
-      dataAiHint: 'ethics compass document',
+      icon: ShieldCheck,
+      description: 'A comprehensive ethical guide for developing and deploying Artificial General Intelligence, addressing value alignment, risk mitigation, and societal impact.',
+      dataAiHint: 'ai ethics document shield',
     },
     {
       id: 'rp-004',
-      title: 'Emergent Swarm Intelligence in Multi-Agent Systems: A Complexity Study',
+      title: 'Emergent Swarm Intelligence: A Complexity Study',
       type: 'Research Paper',
       category: 'Agentic Systems',
       icon: FileText,
-      description: 'Investigates the conditions under which complex, adaptive, and intelligent swarm behaviors emerge from simple local interaction rules in large populations of AI agents.',
-      dataAiHint: 'swarm intelligence ants',
+      description: 'Investigates how complex, adaptive, and intelligent swarm behaviors arise from simple interaction rules in large populations of AI agents.',
+      dataAiHint: 'swarm intelligence collective behavior',
     }
   ];
-  // Make sure to import ShieldCheck if you use it:
-  // import { Library, FileText, Brain, GitFork, Download, ShieldCheck } from 'lucide-react';
-
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -66,7 +64,7 @@ export default function ExploreLibraryPage() {
               The Mendus Archives
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              A curated repository of foundational knowledge, seminal research, and technical blueprints from the heart of Mendus. Delve into the core principles shaping the future of agentic intelligence.
+              A curated collection of foundational knowledge, key research, and technical blueprints from Mendus. Explore the core principles shaping the future of AI.
             </p>
           </div>
         </section>
@@ -85,13 +83,12 @@ export default function ExploreLibraryPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="font-body text-muted-foreground text-sm mb-4 flex-grow">{item.description}</p>
-                     {/* Placeholder for image, ideally load dynamically or use specific ones */}
                     {/* <Image src={`https://placehold.co/400x200.png?text=${item.title.substring(0,10)}`} alt={item.title} width={400} height={200} className="rounded-md aspect-video object-cover mb-4" data-ai-hint={item.dataAiHint} /> */}
                   </CardContent>
                   <div className="p-6 pt-0 mt-auto">
                     <Button asChild variant="outline" className="w-full hover:bg-primary/10">
                       <Link href={`/resources/library/${item.id}`}>
-                        Access Archive Entry <Download className="ml-2 h-4 w-4" />
+                        Access Document <Download className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                   </div>
@@ -99,9 +96,9 @@ export default function ExploreLibraryPage() {
               ))}
             </div>
             <div className="mt-16 text-center">
-              <p className="text-muted-foreground font-body mb-4">Seeking restricted archives or contributing research?</p>
+              <p className="text-muted-foreground font-body mb-4">Seeking restricted documents or contributing research?</p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/support/contact">Submit Access Protocol Request</Link>
+                  <Link href="/support/contact">Submit Access Request</Link>
               </Button>
             </div>
           </div>

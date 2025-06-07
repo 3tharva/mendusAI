@@ -10,35 +10,35 @@ import Image from 'next/image';
 
 
 export const metadata: Metadata = {
-  title: 'Mendus Incubation Nexus: Where Paradigms Shift',
-  description: 'Enter the Mendus Incubation Nexus – a crucible for experimental AI, bleeding-edge concepts, and radical explorations beyond the current technological horizon.',
+  title: 'Mendus Innovation Lab: Where New Ideas Take Shape',
+  description: 'Enter the Mendus Innovation Lab – a space for experimental AI, cutting-edge concepts, and radical explorations beyond current technology.',
 };
 
 export default function ExploreGaragePage() {
   const projects = [
     {
       id: 'project-psi-wave',
-      title: 'Project Psi-Wave: Non-Local Agent Communication',
+      title: 'Project Psi-Wave: Next-Gen Agent Communication',
       status: 'Hypothesis Validation Stage',
-      description: 'Investigating theoretical frameworks for FTL (Faster-Than-Light) communication between AI agents using manipulated quantum field fluctuations. Potential to revolutionize decentralized AI coordination across cosmic distances.',
+      description: 'Investigating new theories for faster-than-light (FTL) communication between AI agents using manipulated quantum fields. Potential to revolutionize AI coordination across vast distances.',
       icon: Zap,
-      imageHint: 'quantum wave abstract',
+      imageHint: 'quantum communication abstract waves',
     },
     {
       id: 'project-chronos',
-      title: 'Project Chronos: Temporal Data Stream Prediction',
+      title: 'Project Chronos: Advanced Temporal Prediction',
       status: 'Algorithmic Prototyping',
-      description: 'Developing AI models capable of predicting complex system evolution by analyzing higher-dimensional temporal data patterns. Applications in precognitive threat assessment and market forecasting.',
+      description: 'Developing AI models that can predict how complex systems will evolve by analyzing multi-dimensional time-based data patterns. Applications in early threat detection and market forecasting.',
       icon: TestTube2,
-      imageHint: 'time spiral data',
+      imageHint: 'time data spiral futuristic',
     },
     {
       id: 'project-noosphere',
-      title: 'Project Noosphere: AI-Mediated Collective Consciousness',
+      title: 'Project Noosphere: AI-Assisted Collective Intelligence',
       status: 'Conceptual Framework Development',
-      description: 'Exploring the potential for a global network of interconnected human and AI minds, fostering a planetary-scale collective intelligence. Focus on ethical BCI and shared cognitive spaces.',
+      description: 'Exploring the potential for a global network of interconnected human and AI minds to foster a planet-wide collective intelligence. Focus on ethical brain-computer interfaces and shared thinking spaces.',
       icon: Users,
-      imageHint: 'global brain network',
+      imageHint: 'global brain network connection',
     }
   ];
 
@@ -50,17 +50,17 @@ export default function ExploreGaragePage() {
           <div className="container mx-auto px-4 md:px-6">
             <Lightbulb className="h-16 w-16 mx-auto mb-6 text-primary animate-float" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              Mendus Incubation Nexus
+              Mendus Innovation Lab
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Welcome to the crucible where nascent realities are forged. The Incubation Nexus is our dedicated skunkworks for exploring paradigm-disrupting concepts, experimental AI architectures, and technologies that exist beyond the current edge of understanding.
+              Welcome to the lab where new realities are explored. The Innovation Lab is our dedicated space for exploring disruptive concepts, experimental AI designs, and technologies beyond current understanding.
             </p>
           </div>
         </section>
 
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Active Incubation Vectors</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Active Research Vectors</h2>
             <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
                 <Card key={project.id} className="flex flex-col justify-between hover:shadow-2xl bg-card rounded-xl overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1">
@@ -84,7 +84,7 @@ export default function ExploreGaragePage() {
                   </CardContent>
                   <div className="p-6 pt-0">
                     <Button variant="ghost" className="w-full text-primary hover:bg-primary/5 justify-start">
-                      Query Further Details <ArrowRight className="ml-auto h-4 w-4" />
+                      Explore Project Details <ArrowRight className="ml-auto h-4 w-4" />
                     </Button>
                   </div>
                 </Card>
@@ -92,10 +92,10 @@ export default function ExploreGaragePage() {
             </div>
             <div className="mt-16 text-center">
               <p className="text-muted-foreground font-body text-lg mb-6">
-                The Incubation Nexus operates under strict information containment protocols. Engagement is by invitation or verified high-level scientific proposal.
+                The Innovation Lab operates with strict information security. Access is by invitation or verified high-level scientific proposal.
               </p>
               <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-                  <Link href="/support/contact">Submit Theoretical Proposal</Link>
+                  <Link href="/support/contact">Submit Research Proposal</Link>
               </Button>
             </div>
           </div>
