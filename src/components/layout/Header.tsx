@@ -7,44 +7,37 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-xl items-center justify-between">
         <Link href="/" className="flex items-center">
-          {/* Placeholder for Akira AI Logo, using text for now */}
-          {/* <A height={24} /> You can use an SVG component here */}
           <span className="font-bold font-headline text-2xl text-primary">
-            akiraAI
+            Mendus
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-4 text-sm lg:gap-6">
           <Link
-            href="/platform"
+            href="/" // Home
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
-            Platform
+            Home
           </Link>
           <Link
-            href="/solutions"
+            href="/about"
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
-            Solutions
+            About
           </Link>
           <Link
-            href="/industries" 
+            href="/discover" 
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
-            Industry
+            Discover
           </Link>
           <Link
-            href="/digital-workers"
+            href="/join"
             className="transition-colors hover:text-foreground/80 text-foreground/60"
           >
-            Digital Workers
-          </Link>
-          <Link
-            href="/resources"
-            className="transition-colors hover:text-foreground/80 text-foreground/60"
-          >
-            Resources
+            Join
           </Link>
         </nav>
+        {/*
         <div className="flex items-center gap-3">
           <Button variant="outline" size="sm" asChild>
             <Link href="/login">Login</Link>
@@ -52,8 +45,8 @@ export default function Header() {
           <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href="/book-demo">Book Demo</Link>
           </Button>
-          {/* Mobile Menu Trigger can be added here if needed */}
         </div>
+        */}
       </div>
     </header>
   );

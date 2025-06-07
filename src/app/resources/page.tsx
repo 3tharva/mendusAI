@@ -8,14 +8,14 @@ import { ArrowRight, BookOpen, FileText, Mic } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 export const metadata: Metadata = {
-  title: 'Resources - akiraAI',
-  description: 'Explore whitepapers, case studies, blog articles, and webinars from akiraAI to learn more about intelligent automation.',
+  title: 'Resources - Mendus',
+  description: 'Explore whitepapers, case studies, blog articles, and webinars from Mendus to learn more about intelligent automation.',
 };
 
 export default function ResourcesPage() {
   const resources = [
     { title: 'The Future of Agentic Automation', type: 'Whitepaper', icon: FileText, link: '#', description: 'A deep dive into the evolving landscape of AI agents and their impact on business.', imageHint: 'whitepaper technology document' },
-    { title: 'Scaling AI in Financial Services', type: 'Case Study', icon: BookOpen, link: '#', description: 'How a leading bank leveraged akiraAI to optimize risk management.', imageHint: 'case study finance report' },
+    { title: 'Scaling AI in Financial Services', type: 'Case Study', icon: BookOpen, link: '#', description: 'How a leading bank leveraged Mendus to optimize risk management.', imageHint: 'case study finance report' },
     { title: 'Top 5 AI Trends for 2024', type: 'Blog Article', icon: FileText, link: '#', description: 'Our expert insights on the AI innovations shaping the year ahead.', imageHint: 'blog article ai trends' },
     { title: 'Webinar: AI for Customer Experience', type: 'Webinar Recording', icon: Mic, link: '#', description: 'Learn how to transform CX with intelligent automation and personalization.', imageHint: 'webinar presentation screen' },
   ];
@@ -31,7 +31,7 @@ export default function ResourcesPage() {
               Knowledge Hub & Resources
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Dive deeper into the world of intelligent automation with akiraAI. Explore our collection of whitepapers, case studies, articles, and webinars to stay informed and inspired.
+              Dive deeper into the world of intelligent automation with Mendus. Explore our collection of whitepapers, case studies, articles, and webinars to stay informed and inspired.
             </p>
           </div>
         </section>

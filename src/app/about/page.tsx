@@ -4,13 +4,13 @@ import Footer from '@/components/layout/Footer';
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Building, Users, Lightbulb, Target } from 'lucide-react';
+import { Building, Users, Lightbulb, Target, Briefcase } from 'lucide-react'; // Added Briefcase
 import Image from 'next/image';
 
 
 export const metadata: Metadata = {
-  title: 'About akiraAI - Our Mission and Vision',
-  description: 'Learn about akiraAI, our mission to revolutionize industries with agentic automation, our vision for the future of AI, and the values that drive our team.',
+  title: 'About Mendus - Our Mission and Vision',
+  description: 'Learn about Mendus, our mission to revolutionize industries with agentic automation, our vision for the future of AI, and the values that drive our team.',
 };
 
 export default function AboutPage() {
@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4 md:px-6 text-center">
             <Building className="h-16 w-16 mx-auto mb-6 text-primary" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              About akiraAI
+              About Mendus
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               We are pioneers in agentic automation, dedicated to empowering businesses with intelligent solutions that drive transformative growth and operational excellence.
@@ -40,13 +40,13 @@ export default function AboutPage() {
                 </p>
                 <h2 className="text-3xl font-bold text-foreground mb-4 mt-8">Our Vision</h2>
                 <p className="font-body text-muted-foreground text-lg">
-                  To be the leading force in a future where intelligent agents and humans collaborate seamlessly, creating a more efficient, productive, and intelligent world. We envision akiraAI as the core platform powering this transformation.
+                  To be the leading force in a future where intelligent agents and humans collaborate seamlessly, creating a more efficient, productive, and intelligent world. We envision Mendus as the core platform powering this transformation.
                 </p>
               </div>
               <div>
                 <Image 
                   src="https://placehold.co/600x450.png" 
-                  alt="akiraAI team collaborating" 
+                  alt="Mendus team collaborating" 
                   width={600} 
                   height={450}
                   className="rounded-lg shadow-xl mx-auto"

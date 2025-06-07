@@ -22,7 +22,7 @@ export default function SolutionsGrid({ limit, showViewAllButton = false }: Solu
               Our Core Solutions
             </h2>
             <p className="text-lg text-muted-foreground">
-              Discover how akiraAI empowers businesses with intelligent automation.
+              Discover how Mendus empowers businesses with intelligent automation.
             </p>
           </div>
         )}

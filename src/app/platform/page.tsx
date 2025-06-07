@@ -8,8 +8,8 @@ import { ArrowRight, Layers, Zap, Settings } from 'lucide-react';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'akiraAI Platform - Powering Intelligent Automation',
-  description: 'Discover the core components and capabilities of the akiraAI platform, designed for robust and scalable agentic automation.',
+  title: 'Mendus Platform - Powering Intelligent Automation',
+  description: 'Discover the core components and capabilities of the Mendus platform, designed for robust and scalable agentic automation.',
 };
 
 export default function PlatformPage() {
@@ -21,7 +21,7 @@ export default function PlatformPage() {
           <div className="container mx-auto px-4 md:px-6 text-center">
             <Layers className="h-16 w-16 mx-auto mb-6 text-primary" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              The akiraAI Platform
+              The Mendus Platform
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               Our robust and scalable platform is the foundation for building and deploying intelligent agentic automation solutions. It combines cutting-edge AI with enterprise-grade reliability.
@@ -61,7 +61,7 @@ export default function PlatformPage() {
           <div className="container mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Deep Dive into Our Technology</h2>
-              <p className="font-body text-muted-foreground mb-4">The akiraAI platform leverages state-of-the-art machine learning models, natural language processing, and robust data pipelines to deliver unparalleled automation capabilities.</p>
+              <p className="font-body text-muted-foreground mb-4">The Mendus platform leverages state-of-the-art machine learning models, natural language processing, and robust data pipelines to deliver unparalleled automation capabilities.</p>
               <p className="font-body text-muted-foreground mb-6">From data ingestion and model training to agent deployment and monitoring, our platform provides a comprehensive suite of tools for the entire AI lifecycle.</p>
               <Button asChild variant="outline" size="lg">
                 <Link href="/resources">
@@ -72,7 +72,7 @@ export default function PlatformPage() {
             <div>
               <Image 
                 src="https://placehold.co/600x400.png" 
-                alt="AkiraAI Platform Architecture Diagram" 
+                alt="Mendus Platform Architecture Diagram" 
                 width={600} 
                 height={400}
                 className="rounded-lg shadow-xl mx-auto"

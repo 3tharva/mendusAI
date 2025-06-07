@@ -121,7 +121,7 @@ export default function SolutionDetailPageContent({ solution }: SolutionDetailPa
             Ready to Implement {title}?
           </h2>
           <p className="font-body text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Let akiraAI partner with you to leverage this solution for groundbreaking results in your operations.
+            Let Mendus partner with you to leverage this solution for groundbreaking results in your operations.
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-md text-lg px-8 py-6">
             <Link href="/book-demo">

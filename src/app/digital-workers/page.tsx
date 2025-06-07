@@ -8,8 +8,8 @@ import { ArrowRight, Bot, Brain, Briefcase } from 'lucide-react';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Digital Workers - akiraAI',
-  description: 'Meet your new AI-powered digital workforce. akiraAI Digital Workers automate complex tasks and augment human capabilities.',
+  title: 'Digital Workers - Mendus',
+  description: 'Meet your new AI-powered digital workforce. Mendus Digital Workers automate complex tasks and augment human capabilities.',
 };
 
 export default function DigitalWorkersPage() {
@@ -21,7 +21,7 @@ export default function DigitalWorkersPage() {
           <div className="container mx-auto px-4 md:px-6 text-center">
             <Bot className="h-16 w-16 mx-auto mb-6 text-primary" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              akiraAI Digital Workers
+              Mendus Digital Workers
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
               Empower your teams with intelligent Digital Workers designed to automate repetitive tasks, analyze complex data, and collaborate seamlessly with your human workforce.
@@ -71,7 +71,7 @@ export default function DigitalWorkersPage() {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Tailored to Your Needs</h2>
-              <p className="font-body text-muted-foreground mb-4">akiraAI Digital Workers can be customized and trained for specific roles and industries, from customer service and finance to IT operations and supply chain management.</p>
+              <p className="font-body text-muted-foreground mb-4">Mendus Digital Workers can be customized and trained for specific roles and industries, from customer service and finance to IT operations and supply chain management.</p>
               <p className="font-body text-muted-foreground mb-6">They learn and adapt over time, continuously improving their performance and delivering increasing value to your organization.</p>
               <Button asChild variant="outline" size="lg">
                 <Link href="/contact">

@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: SolutionPageProps): Promise<M
 
   if (!solution) {
     return {
-      title: 'Solution Not Found - akiraAI',
+      title: 'Solution Not Found - Mendus',
       description: 'The requested solution page could not be found.',
     };
   }
 
   return {
-    title: `${solution.title} - akiraAI Solutions`,
+    title: `${solution.title} - Mendus Solutions`,
     description: solution.shortDescription,
   };
 }

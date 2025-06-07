@@ -5,13 +5,13 @@ import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea'; // Assuming you have this component
+import { Textarea } from '@/components/ui/textarea';
 import Link from 'next/link';
 import { CalendarCheck, Mail, User, Briefcase, MessageSquare } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Book a Demo - akiraAI',
-  description: 'Schedule a personalized demo with akiraAI to see our intelligent automation solutions in action.',
+  title: 'Book a Demo - Mendus',
+  description: 'Schedule a personalized demo with Mendus to see our intelligent automation solutions in action.',
 };
 
 export default function BookDemoPage() {
@@ -24,7 +24,7 @@ export default function BookDemoPage() {
             <CalendarCheck className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl font-bold text-foreground">Book Your Personalized Demo</h1>
             <p className="text-muted-foreground font-body mt-2">
-              Discover how akiraAI can transform your business. Fill out the form below, and our team will contact you shortly.
+              Discover how Mendus can transform your business. Fill out the form below, and our team will contact you shortly.
             </p>
           </div>
           

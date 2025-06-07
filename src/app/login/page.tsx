@@ -9,8 +9,8 @@ import Link from 'next/link';
 import { LogIn } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Login - akiraAI',
-  description: 'Access your akiraAI account to manage your solutions and platform settings.',
+  title: 'Login - Mendus',
+  description: 'Access your Mendus account to manage your solutions and platform settings.',
 };
 
 export default function LoginPage() {
@@ -22,7 +22,7 @@ export default function LoginPage() {
           <div className="text-center mb-8">
             <LogIn className="h-12 w-12 mx-auto mb-4 text-primary" />
             <h1 className="text-3xl font-bold text-foreground">Welcome Back</h1>
-            <p className="text-muted-foreground font-body">Login to your akiraAI account.</p>
+            <p className="text-muted-foreground font-body">Login to your Mendus account.</p>
           </div>
           
           <form className="space-y-6">

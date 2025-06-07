@@ -8,8 +8,8 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Our Solutions - akiraAI',
-  description: 'Explore the intelligent automation solutions offered by akiraAI to enhance your business processes and enterprise systems.',
+  title: 'Our Solutions - Mendus',
+  description: 'Explore the intelligent automation solutions offered by Mendus to enhance your business processes and enterprise systems.',
 };
 
 export default function SolutionsPage() {
@@ -23,7 +23,7 @@ export default function SolutionsPage() {
               Intelligent Automation Solutions
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              akiraAI delivers cutting-edge solutions to enhance your business processes and enterprise systems with agentic automation, enabling smarter workflows and operational excellence.
+              Mendus delivers cutting-edge solutions to enhance your business processes and enterprise systems with agentic automation, enabling smarter workflows and operational excellence.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-md text-lg px-8 py-6">
               <Link href="/book-demo">
