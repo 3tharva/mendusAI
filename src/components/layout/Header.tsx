@@ -24,6 +24,12 @@ export default function Header() {
             About
           </Link>
           <Link
+            href="/industries"
+            className="transition-colors hover:text-foreground/80 text-muted-foreground text-xs"
+          >
+            Industries
+          </Link>
+          <Link
             href="/discover"
             className="transition-colors hover:text-foreground/80 text-muted-foreground text-xs"
           >

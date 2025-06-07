@@ -1,7 +1,9 @@
+
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WelcomeHeroMendus from '@/components/sections/WelcomeHeroMendus';
 import IntroBlurbMendus from '@/components/sections/IntroBlurbMendus';
+import IndustriesSection from '@/components/sections/IndustriesSection';
 import CallToActionMendus from '@/components/sections/CallToActionMendus';
 import StatsMendus from '@/components/sections/StatsMendus';
 import TechStormMendus from '@/components/sections/TechStormMendus';
@@ -13,6 +15,7 @@ export default function HomePage() {
       <main className="flex-grow">
         <WelcomeHeroMendus />
         <IntroBlurbMendus />
+        <IndustriesSection />
         <CallToActionMendus />
         <StatsMendus />
         <TechStormMendus />
