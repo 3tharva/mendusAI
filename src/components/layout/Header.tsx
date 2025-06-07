@@ -24,9 +24,9 @@ export default function Header() {
     { href: "/about", label: "About" },
     { href: "/solutions", label: "Solutions" },
     { href: "/industries", label: "Industries" },
+    { href: "/platform", label: "Platform" },
+    { href: "/digital-workers", label: "Digital Workers"},
     { href: "/resources", label: "Resources" },
-    // { href: "/discover", label: "Discover" }, // Kept from original Mendus, can be re-evaluated
-    // { href: "/join", label: "Join" }, // Kept from original Mendus, can be re-evaluated
   ];
 
   if (!isClient) {
@@ -52,9 +52,6 @@ export default function Header() {
             ))}
           </nav>
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="outline" size="sm" asChild>
-              <Link href="/login">Login</Link>
-            </Button>
             <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link href="/book-demo">Book Demo</Link>
             </Button>
@@ -88,9 +85,6 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="outline" size="sm" asChild>
-            <Link href="/login">Login</Link>
-          </Button>
           <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
             <Link href="/book-demo">Book Demo</Link>
           </Button>
@@ -131,9 +125,6 @@ export default function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-3">
-                  <Button variant="outline" asChild className="w-full">
-                    <Link href="/login" onClick={() => setIsMobileMenuOpen(false)}>Login</Link>
-                  </Button>
                   <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                     <Link href="/book-demo" onClick={() => setIsMobileMenuOpen(false)}>Book Demo</Link>
                   </Button>
