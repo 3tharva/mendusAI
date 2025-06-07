@@ -6,30 +6,39 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
 
 interface SolutionsGridProps {
-  limit?: number; // Optional limit for homepage preview
+  limit?: number; 
   showViewAllButton?: boolean;
+  title?: string;
+  subtitle?: string;
 }
 
-export default function SolutionsGrid({ limit, showViewAllButton = false }: SolutionsGridProps) {
+export default function SolutionsGrid({ 
+  limit, 
+  showViewAllButton = false,
+  title = "Our Core Solutions",
+  subtitle = "Discover how Mendus empowers businesses with intelligent automation."
+}: SolutionsGridProps) {
   const displayedSolutions = limit ? solutions.slice(0, limit) : solutions;
 
   return (
-    <section className="py-12 md:py-16">
+    <section className="py-12 md:py-16 bg-secondary/20">
       <div className="container mx-auto px-4 md:px-6">
-        {limit && ( // Only show this title if it's a limited preview (e.g., on homepage)
-          <div className="mb-10 text-left">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-              Our Core Solutions
+        {(limit || !showViewAllButton) && ( // Show title if it's a preview or if not showing view all button (like on dedicated solutions page)
+          <div className="mb-10 text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              {title}
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Discover how Mendus empowers businesses with intelligent automation.
-            </p>
+            {subtitle && (
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0">
+                {subtitle}
+              </p>
+            )}
           </div>
         )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {displayedSolutions.map((solution) => (
             <Link href={`/solutions/${solution.slug}`} key={solution.slug} className="block group">
-              <Card className="h-full transition-all duration-300 ease-in-out hover:shadow-lg hover:border-primary/50 bg-card flex flex-col justify-between">
+              <Card className="h-full transition-all duration-300 ease-in-out hover:shadow-xl hover:border-primary/50 bg-card flex flex-col justify-between">
                 <div>
                   <CardHeader className="flex flex-row items-start gap-4 pb-3">
                     <div className={`p-3 rounded-lg bg-primary/10 ${solution.iconColorClass || 'text-primary'}`}>
@@ -56,7 +65,7 @@ export default function SolutionsGrid({ limit, showViewAllButton = false }: Solu
         </div>
         {showViewAllButton && solutions.length > (limit || 0) && (
           <div className="mt-12 text-center">
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-md">
               <Link href="/solutions">
                 View All Solutions <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

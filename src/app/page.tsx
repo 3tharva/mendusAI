@@ -6,8 +6,8 @@ import IntroBlurbMendus from '@/components/sections/IntroBlurbMendus';
 import CallToActionMendus from '@/components/sections/CallToActionMendus';
 import StatsMendus from '@/components/sections/StatsMendus';
 import TechStormMendus from '@/components/sections/TechStormMendus';
-// IndustriesSection is not part of the Mendus homepage design from the image
-// import IndustriesSection from '@/components/sections/IndustriesSection';
+import SolutionsGrid from '@/components/sections/SolutionsGrid';
+import IndustriesSection from '@/components/sections/IndustriesSection';
 
 export default function HomePage() {
   return (
@@ -18,6 +18,9 @@ export default function HomePage() {
         <IntroBlurbMendus />
         <CallToActionMendus />
         <StatsMendus />
+        {/* Adding Solutions and Industries previews to the homepage */}
+        <SolutionsGrid limit={3} showViewAllButton={true} />
+        <IndustriesSection /> 
         <TechStormMendus />
       </main>
       <Footer />

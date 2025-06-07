@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import { Twitter, Instagram, Facebook, Youtube } from 'lucide-react';
+import { Twitter, Instagram, Facebook, Youtube, Linkedin } from 'lucide-react'; // Added Linkedin
 
 // Pinterest icon as SVG since it's not in lucide-react by default
 const PinterestIcon = () => (
@@ -14,43 +14,65 @@ export default function Footer() {
   return (
     <footer className="py-12 md:py-16 border-t border-border/40 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mb-10">
           <div>
             <h3 className="font-semibold text-foreground mb-4 text-base">Company</h3>
             <ul className="space-y-3">
-              <li><Link href="/company/about" className="text-sm text-muted-foreground hover:text-primary">About</Link></li>
-              <li><Link href="/company/team" className="text-sm text-muted-foreground hover:text-primary">Team</Link></li>
+              <li><Link href="/about" className="text-sm text-muted-foreground hover:text-primary">About Us</Link></li>
+              <li><Link href="/company/team" className="text-sm text-muted-foreground hover:text-primary">Our Team</Link></li>
               <li><Link href="/company/careers" className="text-sm text-muted-foreground hover:text-primary">Careers</Link></li>
+              <li><Link href="/platform" className="text-sm text-muted-foreground hover:text-primary">Platform</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-foreground mb-4 text-base">Solutions</h3>
+            <ul className="space-y-3">
+              <li><Link href="/solutions" className="text-sm text-muted-foreground hover:text-primary">All Solutions</Link></li>
+              <li><Link href="/solutions/risk-compliance-management" className="text-sm text-muted-foreground hover:text-primary">Risk & Compliance</Link></li>
+              <li><Link href="/solutions/customer-services" className="text-sm text-muted-foreground hover:text-primary">Customer Services</Link></li>
+              <li><Link href="/digital-workers" className="text-sm text-muted-foreground hover:text-primary">Digital Workers</Link></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold text-foreground mb-4 text-base">Industries</h3>
+            <ul className="space-y-3">
+              <li><Link href="/industries" className="text-sm text-muted-foreground hover:text-primary">All Industries</Link></li>
+              <li><Link href="/industries/finance" className="text-sm text-muted-foreground hover:text-primary">Finance</Link></li>
+              <li><Link href="/industries/healthcare" className="text-sm text-muted-foreground hover:text-primary">Healthcare</Link></li>
+              <li><Link href="/industries/retail" className="text-sm text-muted-foreground hover:text-primary">Retail</Link></li>
+            </ul>
+          </div>
+           <div>
+            <h3 className="font-semibold text-foreground mb-4 text-base">Resources</h3>
+            <ul className="space-y-3">
+              <li><Link href="/resources" className="text-sm text-muted-foreground hover:text-primary">Knowledge Hub</Link></li>
+              <li><Link href="/explore/blog" className="text-sm text-muted-foreground hover:text-primary">Blog</Link></li>
+              {/* <li><Link href="/explore/library" className="text-sm text-muted-foreground hover:text-primary">Tech Library</Link></li> */}
+              {/* <li><Link href="/explore/garage" className="text-sm text-muted-foreground hover:text-primary">Idea Garage</Link></li> */}
+              <li><Link href="/ai-strategy" className="text-sm text-muted-foreground hover:text-primary">AI Strategy</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="font-semibold text-foreground mb-4 text-base">Support</h3>
             <ul className="space-y-3">
               <li><Link href="/support/faq" className="text-sm text-muted-foreground hover:text-primary">FAQ</Link></li>
-              <li><Link href="/support/contact" className="text-sm text-muted-foreground hover:text-primary">Contact</Link></li>
-              <li><Link href="/support/privacy" className="text-sm text-muted-foreground hover:text-primary">Privacy</Link></li>
-               <li><Link href="/support/terms" className="text-sm text-muted-foreground hover:text-primary">Terms</Link></li>
+              <li><Link href="/book-demo" className="text-sm text-muted-foreground hover:text-primary">Book a Demo</Link></li>
+              <li><Link href="/support/contact" className="text-sm text-muted-foreground hover:text-primary">Contact Us</Link></li>
+              <li><Link href="/support/privacy" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
+               <li><Link href="/support/terms" className="text-sm text-muted-foreground hover:text-primary">Terms of Service</Link></li>
             </ul>
           </div>
-          <div>
-            <h3 className="font-semibold text-foreground mb-4 text-base">Explore</h3>
-            <ul className="space-y-3">
-              <li><Link href="/explore/blog" className="text-sm text-muted-foreground hover:text-primary">Mendus Blog</Link></li>
-              <li><Link href="/explore/library" className="text-sm text-muted-foreground hover:text-primary">Tech Library</Link></li>
-              <li><Link href="/explore/garage" className="text-sm text-muted-foreground hover:text-primary">Idea Garage</Link></li>
-            </ul>
-          </div>
-           {/* Remove Platform, Solutions, Industries, Resources columns for Mendus theme */}
         </div>
         <div className="flex flex-col items-center justify-between gap-6 pt-8 border-t border-border/20 sm:flex-row">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} Mendus. All rights reserved.
           </p>
-          <div className="flex space-x-5">
+          <div className="flex space-x-4">
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Mendus Twitter" className="text-muted-foreground hover:text-primary"><Twitter size={20} /></Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Mendus Instagram" className="text-muted-foreground hover:text-primary"><Instagram size={20} /></Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Mendus LinkedIn" className="text-muted-foreground hover:text-primary"><Linkedin size={20} /></Link>
             <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Mendus Facebook" className="text-muted-foreground hover:text-primary"><Facebook size={20} /></Link>
-            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Mendus Pinterest" className="text-muted-foreground hover:text-primary"><PinterestIcon /></Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Mendus Instagram" className="text-muted-foreground hover:text-primary"><Instagram size={20} /></Link>
+            <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Mendus YouTube" className="text-muted-foreground hover:text-primary"><Youtube size={20} /></Link>
           </div>
         </div>
       </div>

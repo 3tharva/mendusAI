@@ -33,7 +33,7 @@ export default function SolutionsPage() {
           </div>
         </section>
         
-        <SolutionsGrid />
+        <SolutionsGrid title="" subtitle="" /> {/* Full grid, no extra title/subtitle here */}
 
       </main>
       <Footer />
