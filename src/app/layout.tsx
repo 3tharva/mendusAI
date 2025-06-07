@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'SynapseAI - Engineering the Future of Intelligence',
-  description: 'SynapseAI is an agentic AI startup pioneering new frontiers in artificial intelligence.',
+  title: 'Mendus',
+  description: 'Mendus - The tech revolution. Don\'t Just Witness AI. Wield It.',
 };
 
 export default function RootLayout({
