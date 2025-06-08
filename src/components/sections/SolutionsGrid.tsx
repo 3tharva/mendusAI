@@ -1,19 +1,19 @@
 
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { solutions, Solution } from '@/lib/solution-data'; 
+import { solutions } from '@/lib/solution-data';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '../ui/button';
 
 interface SolutionsGridProps {
-  limit?: number; 
+  limit?: number;
   showViewAllButton?: boolean;
   title?: string;
   subtitle?: string;
 }
 
-export default function SolutionsGrid({ 
-  limit, 
+export default function SolutionsGrid({
+  limit,
   showViewAllButton = false,
   title = "Our Core Solutions",
   subtitle = "Discover how Mendus empowers businesses with intelligent automation."
@@ -23,11 +23,13 @@ export default function SolutionsGrid({
   return (
     <section className="py-12 md:py-16 bg-secondary/20">
       <div className="container mx-auto px-4 md:px-6">
-        {(limit || !showViewAllButton) && ( // Show title if it's a preview or if not showing view all button (like on dedicated solutions page)
+        {(title || subtitle) && (
           <div className="mb-10 text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
-              {title}
-            </h2>
+            {title && (
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                {title}
+              </h2>
+            )}
             {subtitle && (
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto md:mx-0">
                 {subtitle}
@@ -37,7 +39,7 @@ export default function SolutionsGrid({
         )}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {displayedSolutions.map((solution) => (
-            <Link href={`/solutions/${solution.slug}`} key={solution.slug} className="block group">
+            <Link href={`/solutions/${solution.slug}`} key={solution.slug} className="block group h-full">
               <Card className="h-full transition-all duration-300 ease-in-out hover:shadow-xl hover:border-primary/50 bg-card flex flex-col justify-between">
                 <div>
                   <CardHeader className="flex flex-row items-start gap-4 pb-3">
@@ -55,8 +57,8 @@ export default function SolutionsGrid({
                   </CardContent>
                 </div>
                 <div className="p-4 pt-2 mt-auto">
-                   <Button variant="link" className="px-0 text-sm text-primary group-hover:underline">
-                    Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                   <Button variant="link" className="px-0 text-sm font-semibold text-primary group-hover:underline">
+                    Explore Now <ArrowRight className="ml-1 h-4 w-4" />
                   </Button>
                 </div>
               </Card>

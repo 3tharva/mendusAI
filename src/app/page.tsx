@@ -7,7 +7,9 @@ import CallToActionMendus from '@/components/sections/CallToActionMendus';
 import StatsMendus from '@/components/sections/StatsMendus';
 import TechStormMendus from '@/components/sections/TechStormMendus';
 import SolutionsGrid from '@/components/sections/SolutionsGrid';
-// import IndustriesSection from '@/components/sections/IndustriesSection'; // Removed
+import SolutionsByIndustry from '@/components/sections/SolutionsByIndustry';
+import HowAiAgentsWork from '@/components/sections/HowAiAgentsWork';
+
 
 export default function HomePage() {
   return (
@@ -18,9 +20,9 @@ export default function HomePage() {
         <IntroBlurbMendus />
         <CallToActionMendus />
         <StatsMendus />
-        {/* Adding Solutions previews to the homepage */}
-        <SolutionsGrid limit={3} showViewAllButton={true} title="Mendus Solutions" subtitle="Agentic Intelligence to Revolutionize Your Operations" />
-        {/* <IndustriesSection />  // Removed */}
+        <SolutionsGrid limit={6} showViewAllButton={true} title="Mendus Solutions" subtitle="Agentic Intelligence to Revolutionize Your Operations" />
+        <SolutionsByIndustry />
+        <HowAiAgentsWork />
         <TechStormMendus />
       </main>
       <Footer />
