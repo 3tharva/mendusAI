@@ -23,10 +23,9 @@ export default function Header() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/solutions", label: "Solutions" },
-    { href: "/industries", label: "Industries" },
+    // { href: "/industries", label: "Industries" }, // Removed
     { href: "/platform", label: "Platform" },
     { href: "/digital-workers", label: "Digital Workers"},
-    // { href: "/resources", label: "Resources" }, // Removed
   ];
 
   if (!isClient) {
@@ -52,7 +51,7 @@ export default function Header() {
             ))}
           </nav>
           <div className="hidden md:flex items-center gap-3">
-            <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button size="sm" asChild className="bg-pink-600 hover:bg-pink-700 text-white">
               <Link href="/book-demo">Book Demo</Link>
             </Button>
           </div>
@@ -85,7 +84,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button size="sm" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
+          <Button size="sm" asChild className="bg-pink-600 hover:bg-pink-700 text-white">
             <Link href="/book-demo">Book Demo</Link>
           </Button>
         </div>
@@ -125,7 +124,7 @@ export default function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto flex flex-col gap-3">
-                  <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                  <Button asChild className="w-full bg-pink-600 hover:bg-pink-700 text-white">
                     <Link href="/book-demo" onClick={() => setIsMobileMenuOpen(false)}>Book Demo</Link>
                   </Button>
                 </div>
