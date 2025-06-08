@@ -97,9 +97,6 @@ export default function AboutPage() {
                 <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-md text-lg px-8 py-6">
                     <Link href="/company/careers">Shape the Future With Us</Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="rounded-md text-lg px-8 py-6">
-                    <Link href="/support/contact">Become a Partner</Link>
-                </Button>
             </div>
           </div>
         </section>
