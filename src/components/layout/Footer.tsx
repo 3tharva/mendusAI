@@ -17,8 +17,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/about" className="text-sm text-muted-foreground hover:text-primary">About Mendus</Link></li>
               <li><Link href="/platform" className="text-sm text-muted-foreground hover:text-primary">Eon Platform</Link></li>
-              <li><Link href="/digital-workers" className="text-sm text-muted-foreground hover:text-primary">Sentinels</Link></li>
-              <li><Link href="/company/team" className="text-sm text-muted-foreground hover:text-primary">Our Collective</Link></li>
+              <li><Link href="/digital-workers" className="text-sm text-muted-foreground hover:text-primary">Digital Workers</Link></li>
             </ul>
           </div>
           <div>
@@ -30,13 +29,12 @@ export default function Footer() {
                <li><Link href="/solutions/digital-supply-chain" className="text-sm text-muted-foreground hover:text-primary">Intelligent Supply Chains</Link></li>
             </ul>
           </div>
-          {/* Removed Industries Column */}
           <div>
             <h3 className="font-semibold text-foreground mb-4 text-base">Interface</h3>
             <ul className="space-y-3">
               <li><Link href="/support/faq" className="text-sm text-muted-foreground hover:text-primary">Cognitive Enquiries</Link></li>
               <li><Link href="/book-demo" className="text-sm text-muted-foreground hover:text-primary">Request Demo</Link></li>
-              <li><Link href="/company/careers" className="text-sm text-muted-foreground hover:text-primary">Join the Vanguard</Link></li>
+              <li><Link href="/company/careers" className="text-sm text-muted-foreground hover:text-primary">Shape the Future</Link></li>
               <li><Link href="/support/contact" className="text-sm text-muted-foreground hover:text-primary">Nexus Point</Link></li>
                <li><Link href="/support/privacy" className="text-sm text-muted-foreground hover:text-primary">Data Sovereignty</Link></li>
                <li><Link href="/support/terms" className="text-sm text-muted-foreground hover:text-primary">Operational Directives</Link></li>

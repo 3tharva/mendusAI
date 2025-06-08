@@ -114,14 +114,9 @@ export default function CompanyCareersPage() {
               </div>
             ) : (
               <p className="text-center text-muted-foreground font-body text-lg">
-                Our current team needs are met by our advanced AI Sentinels. However, new opportunities often arise. Please check back or express your interest for future roles.
+                Our current team needs are met by our advanced AI Digital Workers. However, new opportunities often arise. Please check back or express your interest for future roles.
               </p>
             )}
-            <div className="text-center mt-16">
-                 <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-10 py-7 rounded-md">
-                    <Link href="/support/contact">Contact Us About Future Roles</Link>
-                </Button>
-            </div>
           </div>
         </section>
       </main>

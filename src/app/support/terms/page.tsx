@@ -26,7 +26,7 @@ export default function SupportTermsPage() {
           </div>
 
           <article className="prose prose-lg max-w-none font-body text-foreground prose-headings:text-primary prose-a:text-primary hover:prose-a:text-primary/80">
-            <p>These Operational Directives & Service Axioms ("Directives") govern your access to and use of the Mendus Eon Platform, Mendus Sentinel Digital Workers, and any associated cognitive services, software, application programming interfaces (APIs), and documentation (collectively, the "Services") provided by Mendus ("Mendus," "We," "Us"). By accessing or utilizing the Services, you ("User," "You") agree to be bound by these Directives.</p>
+            <p>These Operational Directives & Service Axioms ("Directives") govern your access to and use of the Mendus Eon Platform, Mendus Digital Workers, and any associated cognitive services, software, application programming interfaces (APIs), and documentation (collectively, the "Services") provided by Mendus ("Mendus," "We," "Us"). By accessing or utilizing the Services, you ("User," "You") agree to be bound by these Directives.</p>
 
             <h2 id="services-scope"><Users className="inline h-6 w-6 mr-2 text-primary"/>1. Scope of Services & Agentic Capabilities</h2>
             <p>1.1. Mendus provides access to advanced AI-driven services designed for complex problem-solving, automation, and cognitive augmentation. The capabilities of these Services, particularly autonomous AI agents, may evolve rapidly.</p>
@@ -48,7 +48,7 @@ export default function SupportTermsPage() {
             <p>2.3. Data Input: You are responsible for the legality, accuracy, and ethical sourcing of any data you input into the Services. Mendus is not liable for outcomes resulting from flawed, biased, or illicit input data.</p>
 
             <h2 id="intellectual-property">3. Intellectual Property & Cognitive Output</h2>
-            <p>3.1. Mendus IP: All rights, title, and interest in and to the Services, including the underlying AI models, algorithms, Eon Platform architecture, and Sentinel designs, are and will remain the exclusive property of Mendus and its licensors.</p>
+            <p>3.1. Mendus IP: All rights, title, and interest in and to the Services, including the underlying AI models, algorithms, Eon Platform architecture, and Digital Worker designs, are and will remain the exclusive property of Mendus and its licensors.</p>
             <p>3.2. User-Generated Content: Subject to compliance with these Directives, you retain ownership of the novel intellectual property you create using the Services ("Output"). However, you grant Mendus a worldwide, non-exclusive, royalty-free license to use anonymized and aggregated data derived from your use of the Services (excluding your specific confidential Output) for the purpose of improving and developing the Services.</p>
             <p>3.3. Feedback: Any feedback, suggestions, or ideas you provide regarding the Services are non-confidential and may be used by Mendus without restriction or compensation to you.</p>
 

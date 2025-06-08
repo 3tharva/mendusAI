@@ -33,8 +33,8 @@ export default function SupportFaqPage() {
       icon: Code,
     },
     {
-      question: "What makes Mendus Digital Sentinels different from regular AI assistants or bots?",
-      answer: "Mendus Sentinels are more than just pre-programmed tools; they are autonomous thinking agents. Key differences include: 1) Proactive Independence: Sentinels anticipate needs and act without explicit instructions. 2) Complex Reasoning: They can handle unclear situations, strategize, and solve new problems. 3) Continuous Shared Learning: Sentinels learn from every interaction across their network, constantly improving. 4) Dynamic Teamwork: Sentinels can form temporary teams to tackle large-scale problems together.",
+      question: "What makes Mendus Digital Workers different from regular AI assistants or bots?",
+      answer: "Mendus Digital Workers are more than just pre-programmed tools; they are autonomous thinking agents. Key differences include: 1) Proactive Independence: Digital Workers anticipate needs and act without explicit instructions. 2) Complex Reasoning: They can handle unclear situations, strategize, and solve new problems. 3) Continuous Shared Learning: Digital Workers learn from every interaction across their network, constantly improving. 4) Dynamic Teamwork: Digital Workers can form temporary teams to tackle large-scale problems together.",
       icon: InfinityIcon,
     },
     {
