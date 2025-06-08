@@ -12,7 +12,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/about" className="text-sm text-muted-foreground hover:text-primary">About Mendus</Link></li>
               <li><Link href="/platform" className="text-sm text-muted-foreground hover:text-primary">Eon Platform</Link></li>
-              <li><Link href="/digital-workers" className="text-sm text-muted-foreground hover:text-primary">Digital Workers</Link></li>
+              <li><Link href="/digital-workers" className="text-sm text-muted-foreground hover:text-primary">Sentinals</Link></li>
             </ul>
           </div>
           <div>
