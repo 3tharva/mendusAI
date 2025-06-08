@@ -4,7 +4,7 @@
 import Image from 'next/image';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Briefcase, Factory, Users, Cable, Code, Server, MessageSquare, PackageCheck, Cog, Activity } from 'lucide-react'; // Added more icons
+import { Briefcase, Factory, Users, Cable, Code, Server, MessageSquare, PackageCheck, Cog, Activity, LayoutDashboard } from 'lucide-react'; 
 
 interface IndustryFeature {
   icon: React.ElementType;
@@ -20,7 +20,6 @@ const productManagerFeatures: IndustryFeature[] = [
   { icon: LayoutDashboard, title: 'Automated Reporting & Dashboards', description: 'AI-generated reports for quick decision-making.' },
 ];
 
-// Placeholder for other industries, you can define similar feature arrays for them
 const manufacturingFeatures: IndustryFeature[] = [
   { icon: Factory, title: 'Predictive Maintenance', description: 'AI forecasts equipment failures to schedule maintenance proactively.' },
   { icon: Cog, title: 'Quality Control Automation', description: 'Vision AI inspects products for defects with high accuracy.' },
@@ -38,9 +37,9 @@ const TabIconMapping: { [key: string]: React.ElementType } = {
   "Product Managers": Briefcase,
   "Manufacturing": Factory,
   "Human Resource": Users,
-  "SRM": Cable, // Supplier Relationship Management
+  "SRM": Cable, 
   "Developers": Code,
-  "ITSM": Server, // IT Service Management
+  "ITSM": Server, 
   "Customer Service": MessageSquare,
 };
 
@@ -48,14 +47,11 @@ const industryTabs = [
   { value: "product-managers", label: "Product Managers", features: productManagerFeatures },
   { value: "manufacturing", label: "Manufacturing", features: manufacturingFeatures },
   { value: "human-resource", label: "Human Resource", features: humanResourceFeatures },
-  { value: "srm", label: "SRM", features: [{icon: Cable, title: "Vendor Performance AI", description:"Automated supplier risk and performance tracking."}] }, // Simplified for brevity
+  { value: "srm", label: "SRM", features: [{icon: Cable, title: "Vendor Performance AI", description:"Automated supplier risk and performance tracking."}] }, 
   { value: "developers", label: "Developers", features: [{icon: Code, title: "AI Code Autocompletion", description:"Intelligent code suggestions and bug detection."}] },
   { value: "itsm", label: "ITSM", features: [{icon: Server, title: "Automated Incident Routing", description:"AI directs IT tickets to the correct support tier."}] },
   { value: "customer-service", label: "Customer Service", features: [{icon: MessageSquare, title: "AI Chatbot Triage", description:"Smart chatbots handle common queries, escalate complex issues."}] },
 ];
-
-import { LayoutDashboard } from 'lucide-react';
-
 
 export default function SolutionsByIndustry() {
   return (
@@ -121,7 +117,7 @@ export default function SolutionsByIndustry() {
               width={600}
               height={300}
               className="rounded-lg shadow-md mx-auto"
-              data-ai-hint="solutions mid banner integration tools"
+              data-ai-hint="tools workflow"
             />
           </div>
         </div>

@@ -41,7 +41,7 @@ export default function HowAiAgentsWork() {
               width={600}
               height={400}
               className="rounded-lg shadow-xl mx-auto"
-              data-ai-hint="task breakdown abstract process"
+              data-ai-hint="task workflow"
             />
           </div>
         </div>

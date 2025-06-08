@@ -20,7 +20,7 @@ export default function ExploreBlogPage() {
       author: "Dr. Aris Thorne",
       excerpt: "An exploration of the profound ethical and technical questions that arise when AI agents can autonomously rewrite their own core programming...",
       imageSrc: "https://placehold.co/600x350.png",
-      imageHint: "ai code evolution abstract",
+      imageHint: "code workflow",
       slug: "/explore/blog/self-improving-ai",
     },
     {
@@ -29,7 +29,7 @@ export default function ExploreBlogPage() {
       author: "Lyra Nova",
       excerpt: "A technical look into the secure methods and decentralized networks that allow AI agents to learn collectively while keeping data private.",
       imageSrc: "https://placehold.co/600x350.png",
-      imageHint: "global network brain secure",
+      imageHint: "network workflow",
       slug: "/explore/blog/secure-federated-learning",
     },
     {
@@ -38,7 +38,7 @@ export default function ExploreBlogPage() {
       author: "The Mendus Collective",
       excerpt: "A collaborative paper proposing new methods and benchmarks for evaluating progress towards AGI, moving beyond simple tests to assess genuine thinking abilities.",
       imageSrc: "https://placehold.co/600x350.png",
-      imageHint: "ai intelligence test brain",
+      imageHint: "testing workflow",
       slug: "/explore/blog/measuring-agi",
     },
   ];

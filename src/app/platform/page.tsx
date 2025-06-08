@@ -91,7 +91,7 @@ export default function PlatformPage() {
                 width={600} 
                 height={450}
                 className="rounded-lg shadow-2xl mx-auto transform hover:scale-105 transition-transform duration-500"
-                data-ai-hint="platform architecture abstract"
+                data-ai-hint="platform workflow"
               />
             </div>
           </div>

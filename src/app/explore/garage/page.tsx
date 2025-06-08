@@ -22,7 +22,7 @@ export default function ExploreGaragePage() {
       status: 'Hypothesis Validation Stage',
       description: 'Investigating new theories for faster-than-light (FTL) communication between AI agents using manipulated quantum fields. Potential to revolutionize AI coordination across vast distances.',
       icon: Zap,
-      imageHint: 'quantum communication abstract waves',
+      imageHint: 'quantum workflow',
     },
     {
       id: 'project-chronos',
@@ -30,7 +30,7 @@ export default function ExploreGaragePage() {
       status: 'Algorithmic Prototyping',
       description: 'Developing AI models that can predict how complex systems will evolve by analyzing multi-dimensional time-based data patterns. Applications in early threat detection and market forecasting.',
       icon: TestTube2,
-      imageHint: 'time data spiral futuristic',
+      imageHint: 'temporal workflow',
     },
     {
       id: 'project-noosphere',
@@ -38,7 +38,7 @@ export default function ExploreGaragePage() {
       status: 'Conceptual Framework Development',
       description: 'Exploring the potential for a global network of interconnected human and AI minds to foster a planet-wide collective intelligence. Focus on ethical brain-computer interfaces and shared thinking spaces.',
       icon: Users,
-      imageHint: 'global brain network connection',
+      imageHint: 'collective workflow',
     }
   ];
 

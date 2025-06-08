@@ -17,7 +17,7 @@ export default function CompanyTeamPage() {
       role: 'Chief AI Architect & Ethics Lead',
       bio: 'A multi-talented expert whose work covers AI cognition, ethics, and new cybernetic ideas. Dr. Thorne leads Mendus with a vision of humans and AI evolving together.',
       imageSrc: 'https://placehold.co/400x400.png',
-      imageHint: 'scientist portrait thoughtful',
+      imageHint: 'research process',
       icon: Brain,
     },
     {
@@ -25,7 +25,7 @@ export default function CompanyTeamPage() {
       role: 'Head of Eon Platform Engineering & AI Protocols',
       bio: 'Lyra designs the highly scalable systems for the Eon Platform. Her research focuses on how large AI networks behave and how to identify true AI understanding.',
       imageSrc: 'https://placehold.co/400x400.png',
-      imageHint: 'female engineer coding',
+      imageHint: 'engineering process',
       icon: Zap,
     },
     {
@@ -33,7 +33,7 @@ export default function CompanyTeamPage() {
       role: 'Director of AI Strategy & Global Solutions',
       bio: 'Voss leads the deployment of Mendus solutions to solve global challenges, from climate change to resource management, ushering in an era of intelligent cooperation.',
       imageSrc: 'https://placehold.co/400x400.png',
-      imageHint: 'strategy leader modern',
+      imageHint: 'strategy process',
       icon: Users,
     },
     {
@@ -41,7 +41,7 @@ export default function CompanyTeamPage() {
       role: 'Guardian of Algorithmic Fairness & Transparency',
       bio: 'Dedicated to ensuring all Mendus AI systems are fair and transparent, Seraphina develops advanced methods for AI explainability and reducing bias.',
       imageSrc: 'https://placehold.co/400x400.png',
-      imageHint: 'data scientist screen',
+      imageHint: 'analysis process',
       icon: Shield,
     }
   ];

@@ -50,7 +50,7 @@ export default function AboutPage() {
                   width={600} 
                   height={450}
                   className="rounded-lg shadow-xl mx-auto"
-                  data-ai-hint="team collaboration innovation"
+                  data-ai-hint="collaboration workflow"
                 />
               </div>
             </div>

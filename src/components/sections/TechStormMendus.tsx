@@ -14,7 +14,7 @@ export default function TechStormMendus() {
             alt="Technological storm concept"
             layout="fill"
             objectFit="cover"
-            data-ai-hint="dark moody technology"
+            data-ai-hint="innovation workflow"
             className="transform transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center p-8">

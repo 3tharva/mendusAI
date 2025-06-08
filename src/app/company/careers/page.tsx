@@ -20,7 +20,7 @@ export default function CompanyCareersPage() {
       location: 'Global (Remote Options)',
       description: 'Design new architectures for AI thinking, using advanced concepts like quantum-inspired computing and brain-like models. Advanced degree and significant experience in AI/Cognitive Science required.',
       icon: BrainCircuit,
-      imageHint: 'ai brain network abstract'
+      imageHint: 'cognition workflow'
     },
     {
       title: 'AI Ethics & Safety Engineer',
@@ -28,7 +28,7 @@ export default function CompanyCareersPage() {
       location: 'Geneva Innovation Hub',
       description: 'Embed strong ethical principles into our AI agents. Ensure our AI aligns with human values and prevents unintended consequences. Advanced degrees in AI Ethics or Philosophy preferred.',
       icon: ShieldCheck,
-      imageHint: 'ai ethics abstract shield'
+      imageHint: 'ethics workflow'
     },
     {
       title: 'AI Language Specialist',
@@ -36,7 +36,7 @@ export default function CompanyCareersPage() {
       location: 'Digital Alexandria Project',
       description: 'Develop and refine the language models that help Mendus agents understand and communicate with true context. Expertise in computational linguistics and logic needed.',
       icon: Code,
-      imageHint: 'language processing abstract'
+      imageHint: 'language workflow'
     },
     {
       title: 'Large-Scale AI Data Engineer',
@@ -44,7 +44,7 @@ export default function CompanyCareersPage() {
       location: 'Global Data Nexus',
       description: 'Design and manage the decentralized data systems that power our Eon platform, ensuring massive scalability, fast data transfer, and data integrity.',
       icon: Telescope,
-      imageHint: 'data network server abstract'
+      imageHint: 'pipeline workflow'
     }
   ];
 

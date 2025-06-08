@@ -27,7 +27,7 @@ export default function SupportContactPage() {
             layout="fill"
             objectFit="cover"
             className="opacity-20"
-            data-ai-hint="network connection abstract"
+            data-ai-hint="connection workflow"
           />
           <div className="container mx-auto px-4 md:px-6 text-center relative z-10">
             <Globe className="h-16 w-16 mx-auto mb-6 text-primary animate-spin-slow" />

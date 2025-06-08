@@ -66,7 +66,7 @@ export default function DigitalWorkersPage() {
                 width={600} 
                 height={450}
                 className="rounded-lg shadow-2xl mx-auto transform hover:scale-105 transition-transform duration-500"
-                data-ai-hint="digital worker data interface"
+                data-ai-hint="agent workflow"
               />
             </div>
             <div>
