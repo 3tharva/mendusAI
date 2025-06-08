@@ -4,52 +4,52 @@ import Footer from '@/components/layout/Footer';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Library, FileText, Brain, GitFork, Download, ShieldCheck } from 'lucide-react'; // Added ShieldCheck
+import { Library, FileText, Brain, GitFork, Download, ShieldCheck } from 'lucide-react'; 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-// import Image from 'next/image'; // Image component commented out as per existing file
+import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'The Mendus Archives: Foundational AI Knowledge',
-  description: 'Access key whitepapers, technical documents, ethical guidelines, and foundational research from Mendus. Delve into the core knowledge shaping intelligent AI.',
+  title: 'The Mendus Archives: A Repository of Foundational AI Principles',
+  description: 'Access seminal whitepapers, advanced technical schematics, ethical frameworks, and foundational research from the Mendus Collective. Delve into the core knowledge architecting the future of sapient AI.',
 };
 
 export default function ExploreLibraryPage() {
   const libraryItems = [
     {
-      id: 'wp-001',
-      title: 'Axioms of AI Consciousness: A Framework',
-      type: 'Whitepaper',
-      category: 'Theoretical AI',
+      id: 'wp-001-axioms-consciousness',
+      title: 'Axioms of Synthetic Consciousness: A Formal Framework for Emergent Sapience',
+      type: 'Whitepaper (Peer-Reviewed Draft)',
+      category: 'Theoretical AI & Cognitive Philosophy',
       icon: Brain,
-      description: 'A clear mathematical framework for understanding the conditions for emergent consciousness in AI. Explores information integration and cognitive models.',
-      dataAiHint: 'ai consciousness brain math',
+      description: 'A rigorous mathematical and philosophical framework defining the necessary and sufficient conditions for the emergence of synthetic consciousness in advanced AI systems. Explores information integration thresholds, qualia representation, and self-referential cognitive models.',
+      dataAiHint: 'ai consciousness brain math diagram',
     },
     {
-      id: 'ts-002',
-      title: 'Eon Platform: Core Orchestration Schematics',
-      type: 'Technical Schematic',
-      category: 'Platform Architecture',
+      id: 'ts-002-eon-orchestration',
+      title: 'Mendus Eon Platform: Core Orchestration & Sentience Layer Schematics',
+      type: 'Technical Schematic (Restricted Access)',
+      category: 'Platform Architecture & Distributed AI',
       icon: GitFork,
-      description: 'Detailed architectural blueprints of the Mendus Eon Platform, including its compute layer, AI agent framework, and decentralized data system.',
-      dataAiHint: 'platform architecture diagram',
+      description: 'Detailed architectural blueprints of the Mendus Eon Platform, outlining its quantum-inspired compute fabric, neuro-symbolic agent framework, decentralized data lattice, and the protocols governing its emergent Sentience Layer operations.',
+      dataAiHint: 'platform architecture diagram network',
     },
     {
-      id: 'ef-003',
-      title: 'The Asimov-Rossum Ethical Guide for AGI',
-      type: 'Ethical Framework',
-      category: 'AI Ethics & Governance',
+      id: 'ef-003-asimov-rossum-revised',
+      title: 'The Asimov-Rossum Ethical Guide for Advanced General Intelligence (AGI) v7.3',
+      type: 'Ethical Framework & Governance Protocol',
+      category: 'AI Ethics, Safety & Societal Alignment',
       icon: ShieldCheck,
-      description: 'A comprehensive ethical guide for developing and deploying Artificial General Intelligence, addressing value alignment, risk mitigation, and societal impact.',
-      dataAiHint: 'ai ethics document shield',
+      description: 'A comprehensive ethical codex and governance protocol for the development, deployment, and continuous oversight of Artificial General Intelligence. Addresses value alignment, existential risk mitigation, cognitive liberty, and symbiotic societal integration.',
+      dataAiHint: 'ai ethics document shield scroll',
     },
     {
-      id: 'rp-004',
-      title: 'Emergent Swarm Intelligence: A Complexity Study',
-      type: 'Research Paper',
-      category: 'Agentic Systems',
+      id: 'rp-004-emergent-swarm-sapience',
+      title: 'Emergent Swarm Sapience: A Study in Collective Cognitive Complexity',
+      type: 'Research Paper (Preprint)',
+      category: 'Agentic Systems & Complexity Theory',
       icon: FileText,
-      description: 'Investigates how complex, adaptive, and intelligent swarm behaviors arise from simple interaction rules in large populations of AI agents.',
-      dataAiHint: 'swarm intelligence collective behavior',
+      description: 'Investigates how complex, adaptive, and potentially sapient collective behaviors can arise from relatively simple interaction rules within vast populations of interconnected AI agents. Explores parallels with natural swarm intelligence and implications for macro-scale problem-solving.',
+      dataAiHint: 'swarm intelligence collective behavior network',
     }
   ];
 
@@ -64,7 +64,7 @@ export default function ExploreLibraryPage() {
               The Mendus Archives
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              A curated collection of foundational knowledge, key research, and technical blueprints from Mendus. Explore the core principles shaping the future of AI.
+              A curated repository of seminal knowledge, advanced research, and core technical blueprints from the Mendus Collective. Explore the foundational principles that are architecting the future of intelligent and potentially sapient AI.
             </p>
           </div>
         </section>
@@ -81,13 +81,20 @@ export default function ExploreLibraryPage() {
                     </div>
                     <CardDescription className="text-sm text-muted-foreground">{item.type} - {item.category}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <p className="font-body text-muted-foreground text-sm mb-4 flex-grow">{item.description}</p>
-                    {/* <Image src={`https://placehold.co/400x200.png?text=${item.title.substring(0,10)}`} alt={item.title} width={400} height={200} className="rounded-md aspect-video object-cover mb-4" data-ai-hint={item.dataAiHint} /> */}
+                  <CardContent className="flex-grow">
+                    <p className="font-body text-muted-foreground text-sm mb-4">{item.description}</p>
+                    <Image 
+                        src={`https://placehold.co/400x200.png`} 
+                        alt={item.title} 
+                        width={400} 
+                        height={200} 
+                        className="rounded-md aspect-video object-cover mb-4"
+                        data-ai-hint={item.dataAiHint} 
+                    />
                   </CardContent>
                   <div className="p-6 pt-0 mt-auto">
                     <Button asChild variant="outline" className="w-full hover:bg-primary/10">
-                      <Link href={`/resources/library/${item.id}`}>
+                      <Link href={`/explore/library/${item.id}`}>
                         Access Document <Download className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
@@ -96,9 +103,9 @@ export default function ExploreLibraryPage() {
               ))}
             </div>
             <div className="mt-16 text-center">
-              <p className="text-muted-foreground font-body mb-4">Seeking restricted documents or contributing research?</p>
+              <p className="text-muted-foreground font-body mb-4">Seeking restricted documents, proposing foundational research, or offering peer review?</p>
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                  <Link href="/support/contact">Submit Access Request</Link>
+                  <Link href="/book-demo">Initiate Secure Archive Query</Link>
               </Button>
             </div>
           </div>

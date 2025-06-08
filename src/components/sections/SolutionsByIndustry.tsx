@@ -67,11 +67,11 @@ export default function SolutionsByIndustry() {
         </div>
 
         <Tabs defaultValue="product-managers" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2 mb-8">
+          <TabsList className="flex flex-wrap items-center justify-center gap-2 mb-8 h-auto bg-muted p-1 rounded-md">
             {industryTabs.map((tab) => {
                const IconComponent = TabIconMapping[tab.label] || Briefcase;
               return (
-                <TabsTrigger key={tab.value} value={tab.value} className="flex items-center justify-center gap-2 py-2.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md">
+                <TabsTrigger key={tab.value} value={tab.value} className="flex items-center justify-center gap-2 py-2.5 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md text-muted-foreground hover:text-foreground transition-colors duration-150">
                   <IconComponent className="h-5 w-5" />
                   {tab.label}
                 </TabsTrigger>
@@ -107,7 +107,7 @@ export default function SolutionsByIndustry() {
           <div className="md:w-1/2 mb-6 md:mb-0">
             <h3 className="text-2xl font-bold text-foreground mb-3">Integrate with your Favourite Tools</h3>
             <p className="text-muted-foreground">
-              Mendus.ai employs advanced intelligent agents to automate operational tasks and enhance process efficiency. Its seamless integration with existing systems optimizes productivity and supports strategic business objectives.
+              Mendus employs advanced intelligent agents to automate operational tasks and enhance process efficiency. Its seamless integration with existing systems optimizes productivity and supports strategic business objectives.
             </p>
           </div>
           <div className="md:w-1/2">

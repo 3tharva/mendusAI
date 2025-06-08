@@ -10,33 +10,33 @@ import Image from 'next/image';
 
 
 export const metadata: Metadata = {
-  title: 'Mendus Innovation Lab: Where New Ideas Take Shape',
-  description: 'Enter the Mendus Innovation Lab – a space for experimental AI, cutting-edge concepts, and radical explorations beyond current technology.',
+  title: 'Mendus Incubation Nexus: Where Paradigms Shift',
+  description: 'Enter the Mendus Incubation Nexus – a dynamic proving ground for experimental AI architectures, bleeding-edge cognitive frameworks, and radical explorations beyond the current technological horizon.',
 };
 
 export default function ExploreGaragePage() {
   const projects = [
     {
       id: 'project-psi-wave',
-      title: 'Project Psi-Wave: Next-Gen Agent Communication',
-      status: 'Hypothesis Validation Stage',
-      description: 'Investigating new theories for faster-than-light (FTL) communication between AI agents using manipulated quantum fields. Potential to revolutionize AI coordination across vast distances.',
+      title: 'Project Psi-Wave: Hyperdimensional Agent Entanglement',
+      status: 'Hypothesis Validation & Quantum Resonance Calibration',
+      description: 'Investigating novel substrates for non-local communication between disembodied AI agents, potentially leveraging manipulated quantum field dynamics or higher-order dimensional resonances. Success could revolutionize AI collective intelligence across cosmological distances.',
       icon: Zap,
       imageHint: 'quantum workflow',
     },
     {
       id: 'project-chronos',
-      title: 'Project Chronos: Advanced Temporal Prediction',
-      status: 'Algorithmic Prototyping',
-      description: 'Developing AI models that can predict how complex systems will evolve by analyzing multi-dimensional time-based data patterns. Applications in early threat detection and market forecasting.',
+      title: 'Project Chronos: Precognitive System Cartography',
+      status: 'Algorithmic Prototyping & Temporal Anomaly Simulation',
+      description: 'Developing advanced AI architectures capable of modeling and predicting the evolutionary trajectories of complex, multi-variant systems by analyzing multi-dimensional temporal data patterns and subtle acausal indicators. Applications in preemptive threat neutralization and emergent opportunity identification.',
       icon: TestTube2,
       imageHint: 'temporal workflow',
     },
     {
       id: 'project-noosphere',
-      title: 'Project Noosphere: AI-Assisted Collective Intelligence',
-      status: 'Conceptual Framework Development',
-      description: 'Exploring the potential for a global network of interconnected human and AI minds to foster a planet-wide collective intelligence. Focus on ethical brain-computer interfaces and shared thinking spaces.',
+      title: 'Project Noosphere: Symbiotic Cognitive Architectures',
+      status: 'Conceptual Framework Development & Bio-Digital Interface Prototyping',
+      description: 'Exploring the potential for a globally interconnected network of human and synthetic minds, fostering a planetary-scale meta-consciousness. Focus on ethical neuro-cybernetic interfaces and emergent shared cognitive ecosystems for collaborative problem-solving.',
       icon: Users,
       imageHint: 'collective workflow',
     }
@@ -50,17 +50,17 @@ export default function ExploreGaragePage() {
           <div className="container mx-auto px-4 md:px-6">
             <Lightbulb className="h-16 w-16 mx-auto mb-6 text-primary animate-float" />
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-primary mb-6">
-              Mendus Innovation Lab
+              Mendus Incubation Nexus
             </h1>
             <p className="font-body text-lg md:text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Welcome to the lab where new realities are explored. The Innovation Lab is our dedicated space for exploring disruptive concepts, experimental AI designs, and technologies beyond current understanding.
+              Welcome to the crucible where nascent realities are forged. The Incubation Nexus is our dedicated crucible for the audacious, the paradigm-shattering: disruptive concepts, experimental AI sentience architectures, and technologies that transcend the known frontiers of physics and computation.
             </p>
           </div>
         </section>
 
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Active Research Vectors</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-12">Active Research Vectors & Paradigm Probes</h2>
             <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
               {projects.map((project) => (
                 <Card key={project.id} className="flex flex-col justify-between hover:shadow-2xl bg-card rounded-xl overflow-hidden transition-all duration-300 ease-in-out transform hover:-translate-y-1">
@@ -92,10 +92,10 @@ export default function ExploreGaragePage() {
             </div>
             <div className="mt-16 text-center">
               <p className="text-muted-foreground font-body text-lg mb-6">
-                The Innovation Lab operates with strict information security. Access is by invitation or verified high-level scientific proposal.
+                The Incubation Nexus operates under strict information containment protocols. Access is by verified invitation or high-level scientific/ethical proposal demonstrating potential paradigm contribution.
               </p>
               <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
-                  <Link href="/support/contact">Submit Research Proposal</Link>
+                  <Link href="/book-demo">Initiate Collaboration Protocol</Link>
               </Button>
             </div>
           </div>
