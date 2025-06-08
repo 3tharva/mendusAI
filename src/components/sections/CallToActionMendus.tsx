@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
-import { ChevronRight, Compass, Users } from 'lucide-react';
+import { ChevronRight, Compass, Users, Layers } from 'lucide-react';
 
 
 export default function CallToActionMendus() {
@@ -14,9 +14,9 @@ export default function CallToActionMendus() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="bg-pink-600 hover:bg-pink-700 text-white rounded-full text-base px-8 py-6 flex-grow sm:flex-grow-0 justify-between w-full sm:w-auto">
-              <Link href="/resources">
-                Explore Our Knowledge Hub
-                <Compass className="h-5 w-5 ml-2" />
+              <Link href="/platform">
+                Explore Our Platform
+                <Layers className="h-5 w-5 ml-2" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-pink-600 text-pink-600 hover:bg-pink-600/10 hover:text-pink-500 rounded-full text-base px-8 py-6 flex-grow sm:flex-grow-0 justify-between w-full sm:w-auto">

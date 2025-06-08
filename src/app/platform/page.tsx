@@ -79,8 +79,8 @@ export default function PlatformPage() {
               <p className="font-body text-muted-foreground mb-4 text-lg">The Eon Platform is more than just a tool; it's a system for creating truly independent digital helpers. It provides the essential building blocks for AI agents to perceive, reason, learn, and act with growing independence and sophistication.</p>
               <p className="font-body text-muted-foreground mb-6 text-lg">From self-managing global logistics to AI-driven scientific discovery, Eon is built to power solutions previously only imagined. We provide the foundation for a future where digital intelligence is a key, proactive force for global progress.</p>
               <Button asChild variant="outline" size="lg" className="text-lg px-8 py-3">
-                <Link href="/resources">
-                  Explore Eon Technical Guides
+                <Link href="/book-demo">
+                  Request Technical Deep Dive
                 </Link>
               </Button>
             </div>

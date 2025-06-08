@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="py-12 md:py-16 border-t border-border/40 bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 mb-10"> {/* Adjusted to 4 columns */}
           <div>
             <h3 className="font-semibold text-foreground mb-4 text-base">Mendus Core</h3>
             <ul className="space-y-3">
@@ -39,15 +39,7 @@ export default function Footer() {
               <li><Link href="/industries/manufacturing" className="text-sm text-muted-foreground hover:text-primary">Smart Factories</Link></li>
             </ul>
           </div>
-           <div>
-            <h3 className="font-semibold text-foreground mb-4 text-base">Knowledge</h3>
-            <ul className="space-y-3">
-              <li><Link href="/resources" className="text-sm text-muted-foreground hover:text-primary">Singularity Hub</Link></li>
-              <li><Link href="/explore/blog" className="text-sm text-muted-foreground hover:text-primary">Cognitive Chronicles</Link></li>
-              <li><Link href="/explore/library" className="text-sm text-muted-foreground hover:text-primary">Mendus Archives</Link></li>
-              <li><Link href="/explore/garage" className="text-sm text-muted-foreground hover:text-primary">Incubation Nexus</Link></li>
-            </ul>
-          </div>
+           {/* Removed Knowledge Column */}
           <div>
             <h3 className="font-semibold text-foreground mb-4 text-base">Interface</h3>
             <ul className="space-y-3">

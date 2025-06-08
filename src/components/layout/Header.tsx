@@ -26,7 +26,7 @@ export default function Header() {
     { href: "/industries", label: "Industries" },
     { href: "/platform", label: "Platform" },
     { href: "/digital-workers", label: "Digital Workers"},
-    { href: "/resources", label: "Resources" },
+    // { href: "/resources", label: "Resources" }, // Removed
   ];
 
   if (!isClient) {
